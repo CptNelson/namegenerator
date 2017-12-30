@@ -24,20 +24,18 @@ var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Ar
 "Väinä","Väinö","Väkimieli","Väkiä","Yijä","Yö","Äijäpäivä","Äijö","Äiniö"];
 
 
-// function dice(nameCount) gives out a random nummber between 1 and amount of names..
-
 var nameCount = names.length;
 var roll;
 
-
-
+//Function dice(nameCount) gives out a random nummber between 1 and amount of names[]
 function dice(nameCount)
   {
     this.sides = nameCount;
-    roll = Math.floor(Math.random() * (this.nameCount) + 1);
+    roll = Math.floor(Math.random() * (this.nameCount));
     return roll;
   }
 
+//Draw a name from names[]
 function rollName() {
 
   dice();
@@ -46,16 +44,11 @@ function rollName() {
   return names[roll];
 }
 
+//Make a button to press in DOM
 var genButton = document.getElementById("genButton");
 genButton.addEventListener("click", rollName);
 
-
-
-
-
-
-
-
+// Don't let button stay active after pressed
 $(".btn").mouseup(function(){
     $(this).blur();
 })
