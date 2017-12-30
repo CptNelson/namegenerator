@@ -1,4 +1,5 @@
 
+//Array holdimg all the names. use names.push[name] to add names.
 
 var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Armas","Arpia",
 "Asikka","Auvo","Hellikki","Himottu","Hirvas","Hirvi","Hopea","Hyvälempi","Hyväneuvo",
@@ -21,3 +22,22 @@ var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Ar
 "Utujoutsi","Vaania","Vaino","Vaito","Valo","Valta","Valtari","Vartia","Vasara","Venemies",
 "Vesa","Vesi","Vesivalo","Vihas","Vihavaino","Vilja","Viljakka","Viljari","Viljo","Viti",
 "Väinä","Väinö","Väkimieli","Väkiä","Yijä","Yö","Äijäpäivä","Äijö","Äiniö"];
+
+
+// function dice(nameCount) gives out a random nummber between 1 and amount of names..
+
+var nameCount = names.length;
+  var roll;
+
+function dice(nameCount)
+  {
+    this.sides = nameCount;
+    roll = Math.floor(Math.random() * (this.nameCount) + 1);
+    return roll;
+  }
+
+function rollName() {
+
+  dice();
+  return names[roll];
+}
