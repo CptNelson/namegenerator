@@ -1,7 +1,16 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Finnish Name Generator</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400" rel="stylesheet">
@@ -10,6 +19,14 @@
 
 </head>
 <body>
+
+  <div class="container">
+    <div class="item" id="genButton"><button class="btn btn-warning">GENERATE</button></div>
+    <div class="item" id="nameContainer"></div>
+    <div class="item" id="manual"><p>Press button to generate a random name
+      from 200 different, Finnish/Finnic “pagan” proper names, drawn from various historical sources.
+      List of names taken from <a href="https://knightsinthenorth.blog/2017/12/19/pre-christian-finnish-proper-names-table/">this blog post.</a></p></div>
+  </div>
 
   <script type="text/javascript" src="namegenerator.js" ></script>
 

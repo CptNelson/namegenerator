@@ -27,7 +27,9 @@ var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Ar
 // function dice(nameCount) gives out a random nummber between 1 and amount of names..
 
 var nameCount = names.length;
-  var roll;
+var roll;
+
+
 
 function dice(nameCount)
   {
@@ -39,5 +41,21 @@ function dice(nameCount)
 function rollName() {
 
   dice();
+  document.getElementById("nameContainer").innerHTML = names[roll];
+  encodeURI([names].join(""))
   return names[roll];
 }
+
+var genButton = document.getElementById("genButton");
+genButton.addEventListener("click", rollName);
+
+
+
+
+
+
+
+
+$(".btn").mouseup(function(){
+    $(this).blur();
+})
