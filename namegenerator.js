@@ -1,7 +1,7 @@
 
 //Array holdimg all the names. use names.push[name] to add names.
 
-var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Armas","Arpia",
+const names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Armas","Arpia",
 "Asikka","Auvo","Hellikki","Himottu","Hirvas","Hirvi","Hopea","Hyvälempi","Hyväneuvo",
 "Hyväpaulo","Hyväri","Hyvätty","Ihalempi","Ihamuoto","Ikitiera","Ikopäivä","Ikäheimo",
 "Ikävalko","Ilakka","Ilma","Ilmari","Ilmatoivia","Janakka","Jouko","Jousia","Joutsi",
@@ -24,8 +24,8 @@ var names = ["Ahti","Aikamieli","Aikio","Airikka","Ampuja","Ano","Arijoutsi","Ar
 "Väinä","Väinö","Väkimieli","Väkiä","Yijä","Yö","Äijäpäivä","Äijö","Äiniö"];
 
 
-var nameCount = names.length;
-var roll;
+const nameCount = names.length;
+let roll;
 
 //Function dice(nameCount) gives out a random nummber between 1 and amount of names[]
 function dice(nameCount)
@@ -45,7 +45,7 @@ function rollName() {
 }
 
 //Make a button to press in DOM
-var genButton = document.getElementById("genButton");
+let genButton = document.getElementById("genButton");
 genButton.addEventListener("click", rollName);
 
 // Don't let button stay active after pressed
